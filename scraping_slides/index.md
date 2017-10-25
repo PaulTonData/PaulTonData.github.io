@@ -1,5 +1,5 @@
 ---
-title       : Topic Detection and User Clustering
+title       : Exploratory NLP and Veggieboards.com
 subtitle    : 
 author      : Paul Ton
 job         : 
@@ -12,29 +12,37 @@ knit        : slidify::knit2slides
 
 --- .class #id 
 
-## Intro
+## Introduction
 
-* www.veggieboards.com
-* discussion forums
+<img src='./assets/img/veggieboards.jpg'/>
+* units of analysis
   - users
   - threads
-  - posts
+  - posts 
+  
+<img src='./assets/img/forums.jpg'/>
 
 ---
 
 ## Scraping
 
-* research
+* research  
+<img src='./assets/img/alexa.jpg'/>
 * plan
-* ethics
+  - two pass strategy
+  - proxy rotation
+  - MongoDB storage
 
 ---
 
 ## Dataset
 
 * summary
-* users / threads / posts
-* time series
+  - 447,876 posts
+  - 21,910 threads
+  - 14,612 users  
+  
+<img src='./assets/img/threads_per_user.png' height='360' width='480'/><img src='./assets/img/posts_per_thread.png' height='360' width='480'/>
 
 ---
 
@@ -42,30 +50,39 @@ knit        : slidify::knit2slides
 
 ### workflow
   1. text normalisation
-    - cleaning
-    - tokenization
-    - stemming / lemmatization
-  2. dictionary creation
-  3. LDA
+    - cleaning, tokenization, stemming / lemmatization
+  2. phrase modeling
+  3. dictionary creation
+  4. Latent Dirichlet Allocation
+
+https://paultondata.github.io/vis/LDAthreads.html  
+https://paultondata.github.io/vis/LDAusers.html
 
 ---
 
 ## Discussion / Future Work
 
-* author attribution
-* troll detection 
-* deceptive opinion spam
-* question answering
+ * authorship attribution
+  - user meta-data  
+ * troll detection  
+ * deceptive opinion spam
 
 ---
 
 ## References
 
-* https://www.youtube.com/watch?v=6zm9NC9uRkk
-* https://github.com/skipgram/modern-nlp-in-python/blob/master/executable/Modern_NLP_in_Python.ipynb
-
----
-
-## Appendix
-
-* visualizations
+* Veggieboards:  
+http://www.veggieboards.com
+* Alexa page for Veggieboards:  
+https://www.alexa.com/siteinfo/veggieboards.com
+* Analyzing Internet Forums:  
+http://psycnet.apa.org/record/2012-24262-002
+* Modern NLP in Python:  
+https://www.youtube.com/watch?v=6zm9NC9uRkk
+https://github.com/skipgram/modern-nlp-in-python/tree/master/executable
+* Improving LDA Topic Models:  
+https://dl.acm.org/citation.cfm?id=2484166
+* Authorship Attribution with LDA:  
+http://aclweb.org/anthology/W11-0321
+* Zipf's law:  
+https://simple.wikipedia.org/wiki/Zipf%27s_law

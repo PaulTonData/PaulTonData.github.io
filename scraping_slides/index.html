@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Topic Detection and User Clustering</title>
+  <title>Exploratory NLP and Veggieboards.com</title>
   <meta charset="utf-8">
-  <meta name="description" content="Topic Detection and User Clustering">
+  <meta name="description" content="Exploratory NLP and Veggieboards.com">
   <meta name="author" content="Paul Ton">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,7 +32,7 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1>Topic Detection and User Clustering</h1>
+    <h1>Exploratory NLP and Veggieboards.com</h1>
     <h2></h2>
     <p>Paul Ton<br/></p>
   </hgroup>
@@ -43,19 +43,22 @@
     <!-- SLIDES -->
     <slide class="class" id="id" style="background:;">
   <hgroup>
-    <h2>Intro</h2>
+    <h2>Introduction</h2>
   </hgroup>
   <article data-timings="">
-    <ul>
-<li><a href="http://www.veggieboards.com">www.veggieboards.com</a></li>
-<li>discussion forums
+    <p><img src='./assets/img/veggieboards.jpg'/></p>
+
+<ul>
+<li>units of analysis
 
 <ul>
 <li>users</li>
 <li>threads</li>
-<li>posts</li>
+<li>posts </li>
 </ul></li>
 </ul>
+
+<p><img src='./assets/img/forums.jpg'/></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -67,9 +70,15 @@
   </hgroup>
   <article data-timings="">
     <ul>
-<li>research</li>
-<li>plan</li>
-<li>ethics</li>
+<li>research<br>
+<img src='./assets/img/alexa.jpg'/></li>
+<li>plan
+
+<ul>
+<li>two pass strategy</li>
+<li>proxy rotation</li>
+<li>MongoDB storage</li>
+</ul></li>
 </ul>
 
   </article>
@@ -82,10 +91,16 @@
   </hgroup>
   <article data-timings="">
     <ul>
-<li>summary</li>
-<li>users / threads / posts</li>
-<li>time series</li>
+<li>summary
+
+<ul>
+<li>447,876 posts</li>
+<li>21,910 threads</li>
+<li>14,612 users<br></li>
+</ul></li>
 </ul>
+
+<p><img src='./assets/img/threads_per_user.png' height='360' width='480'/><img src='./assets/img/posts_per_thread.png' height='360' width='480'/></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -102,13 +117,15 @@
 <li>text normalisation
 
 <ul>
-<li>cleaning</li>
-<li>tokenization</li>
-<li>stemming / lemmatization</li>
+<li>cleaning, tokenization, stemming / lemmatization</li>
 </ul></li>
+<li>phrase modeling</li>
 <li>dictionary creation</li>
-<li>LDA</li>
+<li>Latent Dirichlet Allocation</li>
 </ol>
+
+<p><a href="https://paultondata.github.io/vis/LDAthreads.html">https://paultondata.github.io/vis/LDAthreads.html</a><br>
+<a href="https://paultondata.github.io/vis/LDAusers.html">https://paultondata.github.io/vis/LDAusers.html</a></p>
 
   </article>
   <!-- Presenter Notes -->
@@ -120,10 +137,13 @@
   </hgroup>
   <article data-timings="">
     <ul>
-<li>author attribution</li>
-<li>troll detection </li>
+<li>authorship attribution
+
+<ul>
+<li>user meta-data<br></li>
+</ul></li>
+<li>troll detection<br></li>
 <li>deceptive opinion spam</li>
-<li>question answering</li>
 </ul>
 
   </article>
@@ -136,21 +156,21 @@
   </hgroup>
   <article data-timings="">
     <ul>
-<li><a href="https://www.youtube.com/watch?v=6zm9NC9uRkk">https://www.youtube.com/watch?v=6zm9NC9uRkk</a></li>
-<li><a href="https://github.com/skipgram/modern-nlp-in-python/blob/master/executable/Modern_NLP_in_Python.ipynb">https://github.com/skipgram/modern-nlp-in-python/blob/master/executable/Modern_NLP_in_Python.ipynb</a></li>
-</ul>
-
-  </article>
-  <!-- Presenter Notes -->
-</slide>
-
-<slide class="" id="slide-7" style="background:;">
-  <hgroup>
-    <h2>Appendix</h2>
-  </hgroup>
-  <article data-timings="">
-    <ul>
-<li>visualizations</li>
+<li>Veggieboards:<br>
+<a href="http://www.veggieboards.com">http://www.veggieboards.com</a></li>
+<li>Alexa page for Veggieboards:<br>
+<a href="https://www.alexa.com/siteinfo/veggieboards.com">https://www.alexa.com/siteinfo/veggieboards.com</a></li>
+<li>Analyzing Internet Forums:<br>
+<a href="http://psycnet.apa.org/record/2012-24262-002">http://psycnet.apa.org/record/2012-24262-002</a></li>
+<li>Modern NLP in Python:<br>
+<a href="https://www.youtube.com/watch?v=6zm9NC9uRkk">https://www.youtube.com/watch?v=6zm9NC9uRkk</a>
+<a href="https://github.com/skipgram/modern-nlp-in-python/tree/master/executable">https://github.com/skipgram/modern-nlp-in-python/tree/master/executable</a></li>
+<li>Improving LDA Topic Models:<br>
+<a href="https://dl.acm.org/citation.cfm?id=2484166">https://dl.acm.org/citation.cfm?id=2484166</a></li>
+<li>Authorship Attribution with LDA:<br>
+<a href="http://aclweb.org/anthology/W11-0321">http://aclweb.org/anthology/W11-0321</a></li>
+<li>Zipf&#39;s law:<br>
+<a href="https://simple.wikipedia.org/wiki/Zipf%27s_law">https://simple.wikipedia.org/wiki/Zipf%27s_law</a></li>
 </ul>
 
   </article>
@@ -163,7 +183,7 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Intro'>
+        data-slide=1 title='Introduction'>
          1
       </a>
     </li>
@@ -195,12 +215,6 @@
       <a href="#" target="_self" rel='tooltip' 
         data-slide=6 title='References'>
          6
-      </a>
-    </li>
-    <li>
-      <a href="#" target="_self" rel='tooltip' 
-        data-slide=7 title='Appendix'>
-         7
       </a>
     </li>
   </ul>
