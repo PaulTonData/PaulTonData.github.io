@@ -13,7 +13,7 @@ knit        : slidify::knit2slides
 --- .class #id 
 
 ## Introduction
-
+  
 <img src='./assets/img/veggieboards.jpg'/>
 * units of analysis
   - users
@@ -22,18 +22,18 @@ knit        : slidify::knit2slides
   
 <img src='./assets/img/forums.jpg'/>
 
----
+---  
 
 ## Scraping
-
 * research  
-<img src='./assets/img/alexa.jpg'/>
+<img src='./assets/img/alexa.jpg'/>  
 * plan
   - two pass strategy
   - proxy rotation
   - MongoDB storage
+  - ethical considerations
 
----
+---  
 
 ## Dataset
 
@@ -42,11 +42,27 @@ knit        : slidify::knit2slides
   - 21,910 threads
   - 14,612 users  
   
-<img src='./assets/img/threads_per_user.png' height='360' width='480'/><img src='./assets/img/posts_per_thread.png' height='360' width='480'/>
+<img src='./assets/img/threads_per_user.png' height='360' width='480'/>
+<img src='./assets/img/posts_per_thread.png' height='360' width='480'/>
+
+
+---  
+
+## Dataset
+
+* post  
+<img src='./assets/img/post.jpg' />  
 
 ---
 
-## NLP
+## Dataset
+
+* cleaned  
+<img src='./assets/img/clean_text.jpg' />  
+
+---
+  
+## Natural Language Processing
 
 ### workflow
   1. text normalisation
@@ -55,6 +71,15 @@ knit        : slidify::knit2slides
   3. dictionary creation
   4. Latent Dirichlet Allocation
 
+---  
+
+## Natural Language Processing  
+
+* processed  
+  
+<img src='./assets/img/processed.jpg' />
+
+* LDA
 https://paultondata.github.io/vis/LDAthreads.html  
 https://paultondata.github.io/vis/LDAusers.html
 
